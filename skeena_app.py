@@ -13,7 +13,7 @@ socketio = SocketIO(app)
 
 @app.route('/')
 def begin():
-    return redirect(url_for('login'))
+    return redirect(url_for('sockets'))
 
 @app.route('/login', methods = ['GET', 'POST'])
 def login():
